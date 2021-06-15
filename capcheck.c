@@ -56,10 +56,10 @@ char check_expansions(Node* cap, char* exclude, int depth) {
 		for (Node* x = cap; x != NULL; x = x->prev) {
 			// This formats each element as so:
 			// 		0101...01,\n
-			printf("\t");
+            printf("\t");
             printf("%i", x->value);
-			//print_bin_rev(x->value, DIM);
-			printf(",\n");
+            //print_bin_rev(x->value, DIM);
+            printf(",\n");
 		}
 		return 1;
 	}
